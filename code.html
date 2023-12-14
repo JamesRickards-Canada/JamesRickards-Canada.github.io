@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Meta data that is not displayed but browsers and search engines can see-->
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta name="title" content="James Rickards - Software" />
+    <meta name="author" content="James Rickards" lang="en" />
+    <meta name="keywords" content="James Rickards, mathematics, number theory, math, Cambridge, McGill, Boulder" />
+    <meta name="description" content="James Rickards - Software" />
+    <meta name="robots" content="index, nofollow" />
+    <title>James Rickards - Software</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">a {text-decoration: none}</style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <h2 style="font-weight: normal; font-height: 43px; text-align: center"><font color="Beige"> James Rickards</font></h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="papers.html">Papers</a></li>
+		  <li><a href="code.html">Code</a></li>
+          <li><a href="visualizations.html">Visualizations</a></li>
+          <li><a href="conferences.html">Conferences and Talks</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="olympiad.html">Math Olympiads</a></li>
+          <li><a href="misc.html">Miscellaneous</a></li>
+        </ul>
+      </div>
+      <div id="content"><br>
+        
+		<h2>Interests and Philosophy</h2>
+		<p>
+		I am interested in developing and implementing <i>efficient</i> number theoretic algorithms, especially those with a visual component. I do a majority of my work in C with the PARI library for several reasons:
+		</p>
+		<ul>
+		  <li> <a target="_blank" href="https://pari.math.u-bordeaux.fr/">PARI/GP</a> is free an open-source language, with an active and very supportive development community; </li>
+		  <li> Code written directly in C (using the PARI library) is extremely fast, many orders of magnitude faster than equivalent code written in (the typical alternative) Python/Sage; </li>
+		  <li> The gp interpreter allows for easy access to compiled C methods, eliminating the downside of always having to compile programs.</li>
+		</ul>
+		
+		<h2>Papers with code</h2>
+        <p>
+		The use of software in research is ever increasing, and unfortunately there are few standards on how to treat it. If a paper uses code/data in an essential way, then I believe that
+		</p>
+		<ul>
+		  <li> The author(s) of the code should make every effort to make the code (or at least the raw data) public, ideally through a repository site like GitHub;</li>
+		  <li> Basic explanations on how to download and use the code should be provided;</li>
+		  <li> There should be some level of internal documentation (commenting, etc.) for anyone who wants to dive deeper.</li>
+		</ul>
+		<p>
+		This creates extra burden on the author(s), but the alternative is papers that are potentially incorrect and essentially uncheckable.
+		</p>
+		
+        <h2>Selected projects</h2>
+        <ul>
+          <li><b><a target="_blank" href="https://github.com/JamesRickards-Canada/Apollonian">Apollonian</a></b> - PARI/GP, LaTeX<br>
+            Computations for Apollonian circle packings, including basic operations, generating pictures in LaTeX, and a very efficient implementation for finding all missing curvatures up to a bound. </li>
+		  <li><b><a target="_blank" href="https://github.com/JamesRickards-Canada/Fundamental-Domains-for-Shimura-curves">Fundamental domains for Shimura curves</a></b> - PARI/GP, Python, LaTeX <br>
+		    Computation of fundamental domains for arithmetic Fuchsian groups. Improves on the algorithms of Voight and Page, and is significantly more efficient than the live Magma implementation (from 100 to millions of times as fast, depending on the example). Also allows for any group between the norm 1 and the totally positive normalizer group. There are plans to incorporate this project into the source code for PARI/GP. </li>
+		  <li><b><a target="_blank" href="https://github.com/JamesRickards-Canada/Isogeny">Isogeny</a></b> - PARI/GP <br>
+            Computation of supersingular l and L isogeny graphs, significantly more efficient than the live Sage implementation. This is a work in progress! </li>
+          <li><b><a target="_blank" href="https://github.com/JamesRickards-Canada/Q-Quadratic">Q-Quadratic</a></b> - PARI/GP <br>
+            Computations with integral binary quadratic forms and (indefinite) quaternion algebras over Q. Includes algorithms to compute optimal embeddings and intersection numbers of modular geodesics, as described in my thesis. </li>
+		  <li><b><a target="_blank" href="https://pari.math.u-bordeaux.fr/PDF/PARIwithWindows.pdf">PARI on Windows</a></b> - PARI/GP <br>
+            A guide on how to install and use PARI/GP on Windows computers. A Windows binary distribution is offered on their website, but this does not work as well as using Windows Subsystem for Linux, and you cannot easily run programs written in PARI (or use gp2c for that matter). </li>
+        </ul>
+        <hr class="overflow" />
+    </div>
+	</div>
+  <div style="margin-top: 0px;" id="bottom"></div>
+  </body>
+</html>
